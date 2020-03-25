@@ -27,6 +27,10 @@
             <outputDirectory>HBaseClient/lib</outputDirectory>
         </file>
         <file>
+            <source>src/main/resources/config.properties</source>
+            <outputDirectory>HBaseClient/conf/</outputDirectory>
+        </file>
+        <file>
             <source>README.md</source>
             <outputDirectory>HBaseClient/</outputDirectory>
         </file>

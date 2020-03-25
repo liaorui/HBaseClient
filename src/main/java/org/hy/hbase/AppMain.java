@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.Properties;
 
 import javax.swing.JFrame;
 
@@ -40,9 +41,15 @@ public class AppMain
     
     public static void main(String[] i_Args) throws Exception 
     {
+        Properties properties = new Properties();
+        properties.load(AppMain.class.getResourceAsStream("/config.properties"));
+        String hadoopUser = properties.getProperty("hadoop.user.name");
+        if (!Help.isNull(hadoopUser)) {
+            // 设置hbase用户
+            System.setProperty("HADOOP_USER_NAME", hadoopUser);
+        }
+
         AppParameter v_Apps     = new AppParameter(i_Args);
-        String       v_HBaseIP  = v_Apps.getParamValue("ip");
-        String       v_znode = v_Apps.getParamValue("znode");
         String       v_FileName = v_Apps.getParamValue("file");
         String       v_FileType = v_Apps.getParamValue("fileType");
         String       v_CMD      = v_Apps.getParamValue("cmd");
@@ -61,9 +68,11 @@ public class AppMain
             System.out.println(showHelpInfo());
             return;
         }
+
+        String v_HBaseIP = properties.getProperty("hbase.zookeeper.quorum");
+        String v_znode = properties.getProperty("zookeeper.znode.parent");
         
-        
-        if ( Help.isNull(v_HBaseIP) || Help.isNull(v_znode))
+        if ( Help.isNull(v_HBaseIP) )
         {
             System.out.println("Parameter [ip] is null.");
             return;
