@@ -69,8 +69,8 @@ public class AppMain
             return;
         }
 
-        String v_HBaseIP = properties.getProperty("hbase.zookeeper.quorum");
-        String v_znode = properties.getProperty("zookeeper.znode.parent");
+        String v_HBaseIP = properties.getProperty("hbase.zookeeper.quorum", "127.0.0.1");
+        String v_znode = properties.getProperty("zookeeper.znode.parent", "/hbase");
         
         if ( Help.isNull(v_HBaseIP) )
         {
