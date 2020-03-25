@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+	<import name="xconfig"         class="java.util.ArrayList" />
+	<import name="xparam"          class="java.util.Hashtable" />
+	<import name="item"            class="org.hy.common.app.Param" />
+	
+	
+	
+	<!-- Http响应类型配置 -->
+	<xconfig>
+		
+	    <xparam id="HttpContentType" key="name">
+			
+			<!-- 图片 -->
+	        <item>
+	            <name>jpg</name>
+				<value>image/jpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>jpeg</name>
+				<value>image/jpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>jpe</name>
+				<value>image/jpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>gif</name>
+				<value>image/gif</value>
+	        </item>
+	        
+	        <item>
+	            <name>png</name>
+				<value>image/png</value>
+	        </item>
+	        
+	        <item>
+	            <name>bmp</name>
+				<value>image/bmp</value>
+	        </item>
+	        
+	        <item>
+	            <name>ico</name>
+				<value>image/x-icon</value>
+	        </item>
+	        
+	        <item>
+	            <name>tif</name>
+				<value>image/tiff</value>
+	        </item>
+	        
+	        <item>
+	            <name>tiff</name>
+				<value>image/tiff</value>
+	        </item>
+	        
+	        <item>
+	            <name>cgm</name>
+				<value>image/cgm</value>
+	        </item>
+	        
+	        <!-- 文件 -->
+	        <item>
+	            <name>ceb</name>
+				<value>application/x-ceb</value>
+	        </item>
+	        
+	        <item>
+	            <name>doc</name>
+				<value>application/msword</value>
+	        </item>
+	        
+	        <item>
+	            <name>docx</name>
+				<value>application/msword</value>
+	        </item>
+	        
+	        <item>
+	            <name>xls</name>
+				<value>application/vnd.ms-excel</value>
+	        </item>
+	        
+	        <item>
+	            <name>xlsx</name>
+				<value>application/vnd.ms-excel</value>
+	        </item>
+	        
+	        <item>
+	            <name>ppt</name>
+				<value>application/octet-stream</value>
+	        </item>
+	        
+	        <item>
+	            <name>pptx</name>
+				<value>application/octet-stream</value>
+	        </item>
+	        
+	        <item>
+	            <name>vsd</name>
+				<value>application/vnd.visio</value>
+	        </item>
+	        
+	        <item>
+	            <name>vsdx</name>
+				<value>application/vnd.visio</value>
+	        </item>
+	        
+	        <item>
+	            <name>rtf</name>
+				<value>application/rtf</value>
+	        </item>
+	        
+	        <item>
+	            <name>txt</name>
+				<value>text/plain</value>
+	        </item>
+	        
+	        <item>
+	            <name>xml</name>
+				<value>text/xml</value>
+	        </item>
+	        
+	        <item>
+	            <name>pdf</name>
+				<value>application/pdf</value>
+	        </item>
+	        
+	        <item>
+	            <name>swf</name>
+				<value>application/x-shockwave-flash</value>
+	        </item>
+	        
+	        <item>
+	            <name>exe</name>
+				<value>application/octet-stream</value>
+	        </item>
+	        
+	        <item>
+	            <name>apk</name>
+				<value>application/vnd.android.package-archive</value>
+	        </item>
+	        
+	        <!-- 压缩包 -->
+	        <item>
+	            <name>z</name>
+				<value>application/x-compress</value>
+	        </item>
+	        
+	        <item>
+	            <name>gz</name>
+				<value>application/x-gzip</value>
+	        </item>
+	        
+	        <item>
+	            <name>gtar</name>
+				<value>application/x-gtar</value>
+	        </item>
+	        
+	        <item>
+	            <name>tar</name>
+				<value>application/tar</value>
+	        </item>
+	        
+	        <item>
+	            <name>zip</name>
+				<value>application/zip</value>
+	        </item>
+	        
+	        <item>
+	            <name>rar</name>
+				<value>application/x-rar-compressed</value>
+	        </item>
+	        
+	        <!-- 声音 -->
+	        <item>
+	            <name>au</name>
+				<value>audio/basic</value>
+	        </item>
+	        
+	        <item>
+	            <name>snd</name>
+				<value>audio/basic</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpeg</name>
+				<value>audio/mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mp2</name>
+				<value>audio/mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mid</name>
+				<value>audio/x-aiff</value>
+	        </item>
+	        
+	        <item>
+	            <name>midi</name>
+				<value>audio/x-aiff</value>
+	        </item>
+	        
+	        <item>
+	            <name>rmf</name>
+				<value>audio/x-aiff</value>
+	        </item>
+	        
+	        <item>
+	            <name>ram</name>
+				<value>audio/x-pn-realaudio</value>
+	        </item>
+	        
+	        <item>
+	            <name>ra</name>
+				<value>audio/x-pn-realaudio</value>
+	        </item>
+	        
+	        <item>
+	            <name>rpm</name>
+				<value>audio/x-pn-realaudio-plugin</value>
+	        </item>
+	        
+	        <item>
+	            <name>wav</name>
+				<value>audio/x-wav</value>
+	        </item>
+	        
+	        <item>
+	            <name>wma</name>
+				<value>audio/x-ms-wma</value>
+	        </item>
+	        
+	        <!-- 视频 -->
+	        <item>
+	            <name>asf</name>
+				<value>video/x-ms-asf</value>
+	        </item>
+	        
+	        <item>
+	            <name>asx</name>
+				<value>video/x-ms-asf</value>
+	        </item>
+	        
+	        <item>
+	            <name>avi</name>
+				<value>video/avi</value>
+	        </item>
+	        
+	        <item>
+	            <name>m2v</name>
+				<value>video/x-mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mps</name>
+				<value>video/x-mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>m4e</name>
+				<value>video/mpeg4</value>
+	        </item>
+	        
+	        <item>
+	            <name>mp4</name>
+				<value>video/mpeg4</value>
+	        </item>
+	        
+	        <item>
+	            <name>mp2v</name>
+				<value>video/mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpv2</name>
+				<value>video/mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpg</name>
+				<value>video/mpg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpeg</name>
+				<value>video/mpg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpv</name>
+				<value>video/mpg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpa</name>
+				<value>video/x-mpg</value>
+	        </item>
+	        
+	        <item>
+	            <name>mpe</name>
+				<value>video/x-mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>m1v</name>
+				<value>video/x-mpeg</value>
+	        </item>
+	        
+	        <item>
+	            <name>rv</name>
+				<value>video/vnd.rn-realvideo</value>
+	        </item>
+	        
+	        <item>
+	            <name>ivf</name>
+				<value>video/x-ivf</value>
+	        </item>
+	        
+	        <item>
+	            <name>wm</name>
+				<value>video/x-ms-wm</value>
+	        </item>
+	        
+	        <item>
+	            <name>wmv</name>
+				<value>video/x-ms-wmv</value>
+	        </item>
+	        
+	        <item>
+	            <name>wmx</name>
+				<value>video/x-ms-wmx</value>
+	        </item>
+	        
+	        <item>
+	            <name>wvx</name>
+				<value>video/x-ms-wvx</value>
+	        </item>
+	        
+		</xparam>
+		
+	</xconfig>
+	
+</config>
