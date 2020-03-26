@@ -13,3 +13,6 @@ HBase客户端数据管理软件
 ```
 bin/HBaseClient
 ```
+
+## TODO
+编辑单元格，直接更新HBase。
