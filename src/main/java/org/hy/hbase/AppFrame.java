@@ -350,8 +350,12 @@ public class AppFrame extends JFrame
         {
             for (String v_Column : this.structure.keySet())
             {
-                String v_FamilyName = v_Column.split(":")[0];
-                String v_ColumnName = v_Column.split(":")[1];
+                String[] items = v_Column.split(":");
+                if (items.length < 2) {
+                    continue;
+                }
+                String v_FamilyName = items[0];
+                String v_ColumnName = items[1];
                 
                 if ( v_FamilyName.equals(i_FamilyName) || Help.isNull(i_FamilyName) )
                 {
