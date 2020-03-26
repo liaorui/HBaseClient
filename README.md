@@ -11,5 +11,5 @@ HBase客户端数据管理软件
 ## 用法
 配置conf/config.properties，然后运行
 ```
-bin/HBaseClient.sh
+bin/HBaseClient
 ```
